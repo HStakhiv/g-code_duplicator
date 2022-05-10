@@ -27,7 +27,6 @@ for i in range(int(values[0])):
     file = open(values["-IN-"], 'r')
     for line in file:
         file2.write(line)
-    file2.write('' + "\n")
-    file2.write('; Copy ' + str(i) + "\n")
+    file2.write("\n; Copy " + str(i) + "\n")
     file.close()
 file2.close()
